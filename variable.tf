@@ -7,17 +7,18 @@ variable "aws_region" {
 variable "ami_id" {
   type        = string
   description = "AMI ID to use for the instance"
-  default     = "ami-123456"
+  default     = "ami-0199d4b5b8b4fde0e"  
 }
 
 variable "instance_type" {
-  type        = string
-  default     = "t2.micro"
+  type    = string
+  default = "t2.micro"
 }
 
 variable "key_name" {
   type        = string
   description = "EC2 Key pair name"
+  default     = "my-ec2-key"  
 }
 
 variable "environment" {
@@ -28,4 +29,5 @@ variable "environment" {
 variable "vpc_id" {
   type        = string
   description = "VPC ID to launch resources into"
+  default     = "vpc-xxxxxxxx"  # Replace with your VPC ID
 }
